@@ -55,6 +55,7 @@ function renderScore() {
 
 // On attends que la page soit chargée
 window.addEventListener('load', function() {
+    let button = document.getElementsByTagName('button')[0];
     // On affiche les scores
     renderScore();
     QrScanner.WORKER_PATH = "~/qr-scanner-worker.min.js";
@@ -65,6 +66,13 @@ window.addEventListener('load', function() {
 
     function decode(result) {
         qrScanner.stop();
+        button.classList.remove('disabled');
+        button.addEventListener('click', function() {
+            qrScanner.start();
+            button.classList.add('disabled');
+        }, {
+            once: true
+        })
         let [borne, points] = result.split(';');
         window.alert('Votre score a bien été pris en compte');
         console.log('votre resultat sur la borne %s est %s', borne, points);
