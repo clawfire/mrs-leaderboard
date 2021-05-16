@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/clawfire/mrs-leaderboard/issues"
   },
-  "homepage": "https://github.com/clawfire/mrs-leaderboard#readme"
+  "homepage": "https://github.com/clawfire/mrs-leaderboard#readme",
+  "dependencies": {
+    "qr-scanner": "^1.2.0"
+  }
 }
