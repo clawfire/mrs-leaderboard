@@ -4,18 +4,33 @@
         <meta charset="utf-8">
         <title>Leaderboard</title>
         <script src="index.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
         <link rel="stylesheet" href="/css/master.scss">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     </head>
     <body>
-    <video id="scanner"></video>
-    <div id="score">
-        Chargement de vos score ...
-    </div>
+        <section id="header">
+            <img src="https://via.placeholder.com/300x100.png?text=banner" alt="" src="ui centered image">
+        </section>
+        <section id="video">
+            <video id="scanner"></video>
+            <button class="ui button massive disabled">
+                <i class="qrcode icon"></i>
+                Scan another code
+            </button>
+        </section>
+        <section id="scoring">
+            <div id="score">
+                Chargement de vos score ...
+            </div>
+        </section>
     <script id="score-tpl" type="text/x-tmpl-mustache">
-    <table>
+    <table class="ui celled table">
         <thead>
-            <td>Borne</td>
-            <td>Points</td>
+            <tr>
+                <th>Borne</th>
+                <th>Points</th>
+            </tr>
         </thead>
         <tbody>
         {{#score}}
@@ -26,8 +41,10 @@
         {{/score}}
         </tbody>
         <tfoot>
-            <td>TOTAL</td>
-            <td>{{total score}}</td>
+            <tr>
+                <th>TOTAL</th>
+                <th>{{total score}}</th>
+            </tr>
         </tfoot>
     </table>
     </script>
