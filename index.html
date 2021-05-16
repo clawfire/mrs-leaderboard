@@ -14,13 +14,21 @@
             <img src="https://via.placeholder.com/300x100.png?text=banner" alt="" src="ui centered image">
         </section>
         <section id="video">
-            <video id="scanner"></video>
-            <button class="ui button disabled">
+            <video id="scanner">
+                <p>Votre navigateur n'est pas compatible avec notre technologie</p>
+            </video>
+            <button class="ui button large disabled">
                 <i class="qrcode icon"></i>
                 Sauvegarder un score
             </button>
         </section>
         <section id="scoring">
+            <div class="ui yellow progress">
+              <div class="bar" style="transition-duration: 300ms; width: 61%;">
+                  <div class="progress">61%</div>
+              </div>
+              <div class="label"><i class="circular inverted yellow trophy icon"></i></div>
+            </div>
             <div id="score">
                 <div class="ui active inverted dimmer">
                     <div class="ui text loader">Chargement des scores</div>

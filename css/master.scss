@@ -1,10 +1,10 @@
 body{
-    margin: 0;
-    padding: 20px;
+    background-image: url("/img/jakob-braun-vpsPRd_rz-A-unsplash.jpeg");
+    background-size: cover;
 }
-section{
-    outline: 1px solid red;
-    text-align: center;
+#scoring,
+#score {
+    padding-top: 2rem;
 }
 #video{
     button{
