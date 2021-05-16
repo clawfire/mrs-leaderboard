@@ -38,6 +38,10 @@ if (localStorage.getItem('score') == null) {
 var scores = JSON.parse(localStorage.getItem('score'));
 
 
+/**
+ * renderScore - rends le table de score
+ *
+ */
 function renderScore() {
     var source = document.getElementById('score-tpl').innerHTML;
     var template = Handlebars.compile(source);
@@ -59,10 +63,14 @@ window.addEventListener('load', function() {
     const qrScanner = new QrScanner(videoElem, result => decode(result));
 
     function decode(result) {
-        var [borne, points] = result.split(';');
+        qrScanner.stop();
+        let [borne, points] = result.split(';');
         window.alert('Votre score a bien été pris en compte');
         console.log('votre resultat sur la borne %s est %s', borne, points);
-        qrScanner.stop();
+        let index = scores.findIndex(quizz => quizz.id === borne);
+        scores[index].points = points;
+        localStorage.setItem('score', JSON.stringify(scores));
+        renderScore();
     }
 
 
