@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Leaderboard</title>
         <script src="/node_modules/qr-scanner/qr-scanner.umd.min.js" charset="utf-8"></script>
+        <script src="/node_modules/handlebars/dist/handlebars.min.js"></script>
         <script src="index.js" charset="utf-8"></script>
         <style media="screen">
             #scanner{
@@ -13,5 +14,28 @@
     </head>
     <body>
     <video id="scanner"></video>
+    <div id="score">
+        Chargement de vos score ...
+    </div>
+    <script id="score-tpl" type="text/x-tmpl-mustache">
+    <table>
+        <thead>
+            <td>Borne</td>
+            <td>Points</td>
+        </thead>
+        <tbody>
+        {{#score}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{points}} pts</td>
+            </tr>
+        {{/score}}
+        </tbody>
+        <tfoot>
+            <td>TOTAL</td>
+            <td>{{total score}}</td>
+        </tfoot>
+    </table>
+    </script>
     </body>
 </html>
