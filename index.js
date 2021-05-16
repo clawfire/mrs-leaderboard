@@ -23,7 +23,7 @@ const defaultScore = [{
 Handlebars.registerHelper("total", function(value) {
     let count = 0;
     value.forEach((item, i) => {
-        count += item.points;
+        count += parseInt(item.points);
     });
     console.log("score totalisé : %s pts", count);
     return count + "pts";
