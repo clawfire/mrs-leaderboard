@@ -157,3 +157,6 @@ Temporary Items
 .apdisk
 
 # End of https://www.toptal.com/developers/gitignore/api/node,osx
+
+# Local Netlify folder
+.netlify
