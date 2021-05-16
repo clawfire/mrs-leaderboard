@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/clawfire/mrs-leaderboard#readme",
   "dependencies": {
+    "handlebars": "^4.7.7",
     "qr-scanner": "^1.2.0"
   }
 }
