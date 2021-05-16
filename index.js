@@ -1,3 +1,5 @@
+import Handlebars from 'handlebars';
+import QrScanner from 'qr-scanner';
 // Initialisation de variables et d'objets par default
 const defaultScore = [{
         id: "g1",
@@ -55,8 +57,7 @@ function renderScore() {
 window.addEventListener('load', function() {
     // On affiche les scores
     renderScore();
-
-    QrScanner.WORKER_PATH = "node_modules/qr-scanner/qr-scanner-worker.min.js";
+    QrScanner.WORKER_PATH = "~/qr-scanner-worker.min.js";
     // on localise l'element video qui va servir à donner le feedback client
     const videoElem = document.getElementById('scanner');
     // on créé un element de scanner

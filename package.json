@@ -4,7 +4,8 @@
   "description": "petit leaderboard pour un musée",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,9 @@
   "dependencies": {
     "handlebars": "^4.7.7",
     "qr-scanner": "^1.2.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.32.13"
   }
 }
