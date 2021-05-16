@@ -1,0 +1,25 @@
+{
+  "name": "mrs-leaderboard",
+  "version": "1.0.0",
+  "description": "petit leaderboard pour un musée",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clawfire/mrs-leaderboard.git"
+  },
+  "keywords": [
+    "leaderboard",
+    "qrcode",
+    "scanner",
+    "score"
+  ],
+  "author": "thibaultmilan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clawfire/mrs-leaderboard/issues"
+  },
+  "homepage": "https://github.com/clawfire/mrs-leaderboard#readme"
+}
