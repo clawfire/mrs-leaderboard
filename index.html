@@ -10,18 +10,20 @@
         <link rel="stylesheet" href="/css/master.scss">
         <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     </head>
-    <body class="ui center aligned fluid container">
+    <body class="ui fluid container">
         <section id="header">
-            <img src="https://via.placeholder.com/300x100.png?text=banner" alt="" src="ui centered image">
+            <img src="https://via.placeholder.com/300x100.png?text=banner" alt="" class="ui centered image">
         </section>
         <section id="video">
             <video id="scanner">
                 <p>Votre navigateur n'est pas compatible avec notre technologie</p>
             </video>
-            <button class="ui button large disabled">
-                <i class="qrcode icon"></i>
-                Sauvegarder un score
-            </button>
+            <div class="ui center aligned container">
+                <button class="ui button large disabled">
+                    <i class="qrcode icon"></i>
+                    Sauvegarder un score
+                </button>
+            </div>
         </section>
         <section id="scoring">
             <div class="ui blue progress">
