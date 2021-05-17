@@ -84,7 +84,7 @@ window.addEventListener('load', function() {
     renderScore();
     updateScore(scores);
 
-    QrScanner.WORKER_PATH = "~/qr-scanner-worker.min.js";
+    QrScanner.WORKER_PATH = "/qr-scanner-worker.min.js";
     // on localise l'element video qui va servir à donner le feedback client
     const videoElem = document.getElementById('scanner');
     // on créé un element de scanner

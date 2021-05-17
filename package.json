@@ -4,8 +4,8 @@
   "description": "petit leaderboard pour un musée",
   "main": "index.html",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "cp node_modules/qr-scanner/qr-scanner-worker.min.js dist/qr-scanner-worker.min.js && parcel index.html",
+    "build": "cp node_modules/qr-scanner/qr-scanner-worker.min.js dist/qr-scanner-worker.min.js && parcel build index.html"
   },
   "repository": {
     "type": "git",
