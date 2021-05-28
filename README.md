@@ -2,7 +2,7 @@
 
 This little one-pager will let you scan and save scores into your device localstorage, using the camera API to scan QR Codes. The purpose is to let visitors "collect" their score on differents waypoints and save them.
 
-![](https://img.shields.io/github/license/clawfire/mrs-leaderboard)
+![](https://img.shields.io/badge/license-Do%20No%20Harm-green)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d60a4f11-0049-4cb4-af50-72753b294f74/deploy-status)](https://app.netlify.com/sites/mrs-leaderboard/deploys)
 
 
